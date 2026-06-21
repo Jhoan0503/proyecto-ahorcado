@@ -29,6 +29,10 @@ while intentos > 0:
 
     letra_usuario = input("Ingrese una letra: ")
 
+    if len(letra_usuario) != 1:
+        print("Ingrese solo una letra")
+        continue
+
     if letra_usuario in letras_correctas:
         print ("Ya ingresaste esa letra")
         continue 
