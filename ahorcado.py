@@ -29,6 +29,10 @@ while intentos > 0:
 
     letra_usuario = input("Ingrese una letra: ")
 
+    if letra_usuario in letras_correctas:
+        print ("Ya ingresaste esa letra")
+        continue 
+   
     if letra_usuario in palabra_secreta:
 
         print("¡Letra correcta!")
