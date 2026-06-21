@@ -12,6 +12,8 @@ intentos = 5
 # Letras descubiertas
 letras_correctas = []
 
+letras_usadas = []
+
 print("Bienvenido al juego del ahorcado")
 
 while intentos > 0:
@@ -27,7 +29,11 @@ while intentos > 0:
 
     print("\nPalabra:", palabra_mostrar)
 
+    print("Letras utilizadas:", letras_usadas)
+
     letra_usuario = input("Ingrese una letra: ")
+
+    letras_usadas.append(letra_usuario)
 
     if len(letra_usuario) != 1:
         print("Ingrese solo una letra")
